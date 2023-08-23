@@ -107,6 +107,10 @@ header{
 }
 .logo-container{
     display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 3rem;
+    overflow: hidden;
     animation: moveLogos 30s linear infinite;
 }
 @keyframes moveLogos {
@@ -118,9 +122,7 @@ header{
     }
     
 }
-.logo-container img {
-    width: 100px; margin:0 100px;
-}
+
 
 /* sales off section */
 .sales-off-section {
@@ -200,7 +202,7 @@ padding-top:40px; display: grid; grid-template-columns:repeat(5,1fr);
 .product-image img {
     width: 220px; height: 220px;
 }
-.icon-hover i {
+.icon-hover  {
     position:absolute; top:10px; left:55%;
     z-index:10;
     color: #000000; font-size: 20px; background-color: #ffffff;
