@@ -7,4 +7,18 @@ iconNav.addEventListener('click',function() {
     
 });
 
+//featured products hover effect
+document.addEventListener("DOMContentLoaded", () => {
+  const productImgContents = document.querySelectorAll(".featured-product-content");
+  const cartIcons = document.querySelectorAll(".icon-hover");
 
+  productImgContents.forEach((imgContent, index) => {
+      imgContent.addEventListener("mouseover", () => {
+          cartIcons[index].style.display = "block";
+      });
+
+      imgContent.addEventListener("mouseout", () => {
+          cartIcons[index].style.display = "none";
+      });
+  });
+});
