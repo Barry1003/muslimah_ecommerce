@@ -115,10 +115,10 @@ header{
 }
 @keyframes moveLogos {
     0% {
-        transform:translateX(0%);
+        transform:translateX(40%);
     }
     100% {
-        transform: translateX(5%);
+        transform: translateX(-20%);
     }
     
 }
